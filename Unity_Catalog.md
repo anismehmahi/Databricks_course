@@ -71,8 +71,6 @@ Unity Catalog supports a hierarchy of permissions for catalogs, databases, and t
      - **Catalog Level**: Allows the user to select data from any table in that catalog (requires the user to have `USE CATALOG` and `USE SCHEMA` permissions).
      - **Schema Level**: Allows the user to select data from any table in that schema (requires `USE SCHEMA`).
 
----
-
 #### **Explicit vs. Inherited Permissions**
 When we say that `USE CATALOG` and `USE SCHEMA` are explicit and not inherited, we mean that giving a user `USE CATALOG` does not give him the power to use schemas, so he needs `USE SCHEMA` also.
 Not like if we give him `SELECT` at the catalog level he can automatically select all tables inside any schema (if he has `USE SCHEMA` and `USE CATALOG` of course).
