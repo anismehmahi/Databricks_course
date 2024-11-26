@@ -53,7 +53,7 @@ Unity Catalog supports a hierarchy of permissions for catalogs, databases, and t
     T1   T2   T3     T4   T5   T6     T7   T8   T9
 ```
 
-#### ** Some Permission Types**
+#### ** Some Permission Types** [YouTube Video](https://www.youtube.com/watch?v=9HxSWYUeQgE&list=PL6pAXQQpiH-mi8AO5_UDPpOPPjted9kCv&index=9)
 
 1. **USE CATALOG**:
    - Found **only** at the catalog level.
