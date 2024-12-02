@@ -79,11 +79,21 @@
    OPTIONS (path '/mnt/data/sample.json');
    ```
 
----
 
+## 7. Converting Parquet Files to a Delta Table
+If you have a dataset as multiple Parquet files in an external location, you can convert it to a Delta Table :
+
+```sql
+CONVERT TO DELTA parquet.`path_to_directory_in_which_parquet_files_are_in` PARTITIONED BY (column_name column_type);
+```
+
+You can now register those files as a Delta Table into Catalog (see step 5) and start querying this data.
+
+---
 ## Notes
 - **External Tables**:  
   Dropping an external table (e.g., `DROP TABLE catalog_name.db_name.external_table_name;`) does not delete the storage or data; it only removes the table from the catalog.
 - Ensure proper **storage credentials** and **external location setup** before working with external tables.
 
 ---
+
