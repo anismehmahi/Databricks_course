@@ -12,5 +12,6 @@ Using the DataFrame API for such operations requires:
 This is inefficient for operations like deleting a single row. Instead, use **SparkSQL** or the **Delta Table API**.
 
 In the notebook associated you will find the use of Delta Table API.
+
 ---
 
